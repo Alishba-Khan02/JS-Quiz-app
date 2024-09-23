@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./images/channels4_profile-removebg-preview.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Animated heading -->
+    <h1 class="quiz-heading">JavaScript Quiz</h1>
+    
+    <div class="quiz-container" id="quiz">
+      <!-- Boxes for total and remaining questions with icons -->
+      <div class="status-box">
+        <div class="status-item">
+          <i class="fas fa-list-alt"></i>
+          <span id="total-questions" class="status-text">Total Questions: 0</span>
+        </div>
+        <div class="status-item">
+          <i class="fas fa-clock"></i>
+          <span id="remaining-questions" class="status-text">Remaining Questions: 0</span>
+        </div>
+      </div>
+
+      <div id="question" class="question"></div>
+
+      <div class="options">
+        <label>
+          <input type="radio" name="answer" class="answer" id="a" />
+          <span id="a_text"></span>
+        </label>
+        <label>
+          <input type="radio" name="answer" class="answer" id="b" />
+          <span id="b_text"></span>
+        </label>
+        <label>
+          <input type="radio" name="answer" class="answer" id="c" />
+          <span id="c_text"></span>
+        </label>
+        <label>
+          <input type="radio" name="answer" class="answer" id="d" />
+          <span id="d_text"></span>
+        </label>
+      </div>
+      <button id="prev" class="btn" onclick="prevQuestion()">Previous</button>
+      <button id="next" class="btn" onclick="nextQuestion()">Next</button>
+    </div>
+  </div>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
